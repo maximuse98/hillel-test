@@ -21,7 +21,18 @@
         return Math.Sqrt(n);
     }
     public static int Factorial (int number)
-    {
+    {   
+      
+        if(number == 0)
+        {
+            return 0;
+        }
+
+        if(number < 0)
+        {
+            throw new Exception("Number must above 0");
+        }
+
         if(number == 1)
         {
             return 1;
