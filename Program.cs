@@ -25,8 +25,8 @@
 
     public static long Fackt(long n)
     {
-        if (n > 0)
-            return n * Fackt(n - 1);
-        return 1;
+        if (n <= 0)
+            return 0;
+        return n > 1 ? n * Fackt(n - 1) : 1;
     }
 }
