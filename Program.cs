@@ -25,12 +25,12 @@
       
         if(number == 0)
         {
-            return 0;
+            return 1;
         }
 
         if(number < 0)
         {
-            throw new Exception("Number must above 0");
+            throw new Exception("Number must be above 0");
         }
 
         if(number == 1)
