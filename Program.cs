@@ -20,4 +20,22 @@
 
         return Math.Sqrt(n);
     }
+    public static int Factorial(int number) 
+    { 
+       
+        if (number< 0) 
+        {
+            throw new ArgumentException("The method works only with numbers greater than zero");
+        }
+
+        int result = 1;
+        for (int currentNumber = 1; currentNumber <= number; currentNumber++)
+        {
+            result *= currentNumber;
+        }
+        return result;
+    }
+
+    int factorial = Factorial(10);
+    Console.WriteLine($"Factorial {number} ={factorial}")
 }
